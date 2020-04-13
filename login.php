@@ -16,7 +16,7 @@ if(mysqli_num_rows($result1) > 0)
   while($row = mysqli_fetch_assoc($result1))
   {
     echo $row['id'];
-    $_SESSION['id'] = $row['id'];
+    $_SESSION['user_id'] = $row['id'];
     
 
     echo "<script>
